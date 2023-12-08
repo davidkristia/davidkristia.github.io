@@ -1,0 +1,528 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="assets/img/TaboTobaLogo.png" rel="icon">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-DBi+RRZa1Kv0i4YqJwF+3FdTkIoCZsScvl9X1fu4TK+jO7U9jZO+LCp3Mz2f+4+3y3SLfx2Vq41d0uJ6cvQigg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+        <meta charset="utf-8">
+
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- CSS Files -->
+        <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+        <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+        <!-- CSS Utama -->
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/lembaga.css" rel="stylesheet">
+
+
+        <style type="text/css">
+            /*--------------------------------------------------------------
+            # Display Rate Ulasan
+            --------------------------------------------------------------*/
+            input[type="radio"] {
+            display: none;
+            }
+
+            input[type="radio"] + label:before {
+            content: "★";
+            display: inline-block;
+            margin-right: 5px;
+            font-size: 30px;
+            color: rgb(255, 217, 0);
+            }
+
+        </style>
+
+    </head>
+
+    
+
+Admin
+    <body>
+        <style type="text/css">                        
+        .header {
+            background:#fff;
+            color: #000000;
+            box-shadow:0 2px 5px rgba(0,0,0,0.2);
+            padding: 15px 20px;
+            width:100%;
+            height: 90px;
+            position:fixed;
+            top:0;
+            left:0;
+            z-index:9;
+        }
+        .header .header_in{
+            color: #000000;
+        }
+
+        #toggle {
+            background:transparent;
+            border:none;
+            width:30px;
+            height:30px;
+            cursor:pointer; 
+            outline:0;
+        }
+
+        .sidebar {
+            background:#fff;
+            width:235px;
+            position:fixed;
+            top: 50px;
+            left:-235px;
+            height:100%;
+            box-shadow:0 2px 8px rgba(0,0,0,0.2);
+            padding: 20px;
+            padding-top:50px;
+            transition:all 0.3s ease-out;
+            z-index: 9;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .sidebar ul li a {
+            color: #333;
+        }
+
+        .sidebarshow {
+            left:0;
+        }
+        .content {
+                margin-top: 50px;
+                padding: 20px;
+                border-top: 1px solid #ddd;
+                border-right: 1px solid #ddd;
+                border-bottom: 1px solid #ddd;
+            }
+        .waktu{
+            align-items: end;
+        }
+        .navbar{
+            justify-content:center;
+            margin-top: 20px;
+        }
+        
+        
+
+        </style>
+
+        
+
+    </head>
+    <body>
+        <header id="header" class="fixed-top">
+            <div class="container d-flex align-items-center">
+                <button class="toggle mx-4" id="toggle">
+                        <span><a ><i class="fas fa-bars" style="color: #ffffff;"></i></span>
+                </button>
+                <a href="Dashboard.html" class="logo">
+                    <img src="assets/img/ITDEL.png" alt="" class="img-fluid">
+                    <h1 class="logo ms-4"><a href="index.php">INSTITUT TEKNOLOGI DEL</a></h1><br> </br>
+                    <div></div>
+                    <p style="color: white; margin-left: 50px; margin-top: 10px;">Martuhan, Marroha, Marbisuk</p>
+               
+                </a>    
+                
+                
+            </div>     
+                   
+        </header>
+         
+        <div class="sidebar" id='sidebar'>
+            <nav id="navbar" class="navbar">
+                <ul class="nama">
+                    <h5 class="ulasan-img"><i class="fas fa-user mx-3" style="color: black;"></i></h5>
+                    <h4>
+                       Admin                   </h4>                          
+                </ul>
+            </nav>
+            <ul class="mt-4">
+                <li><a href="Dashboard.html"><i class="fas fa-dashboard mx-2"></i>  Dashboard</a></li>
+                <li><a href="pengunguman.html"><i class="fas fa-bullhorn mx-2"></i> Pengunguman</a></li>
+                <li><a href="prodi.html"><i class=" fas fa-laptop-code mx-2"></i> Program Pendidikan</a></li>
+                <li><a href="fasilitas.html"><i class="fas fa-suitcase mx-2"></i> Fasilitas</a></li>
+                <li><a href="lembaga.html"><i class="fas fa-award mx-2"></i> Lembaga</a></li>
+                <li><a href="#"><i class="fas fa-user mx-2"></i> Akun</a></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt mx-2"></i> Log Out</a></li>
+            </ul> 
+        </div>
+        <div class="content mb-1"></div>
+        <h1 style="text-align: center;">LEMBAGA INSTITUT TEKNOLOGI DEL</h1>
+        <a href="#" class="btn"><i class="fas fa-plus"></i> Tambah Lembaga</a>
+    </div>
+        <div class="card">
+            <div class="edit-btn" onclick="editCard()">
+                <i class="fas fa-pencil-alt"></i> Edit
+            </div>
+            <h1>LPPM</h1>
+            <div class="card-content">
+                <p>LPPM Institut Teknologi Del
+
+                    Lembaga Penelitian dan Pengabdian Masyarakat (LPPM) adalah lembaga yang berada di bawah Institut Teknologi Del yang mempunyai tugas untuk mengkoordinasikan, memantau, dan menilai pelaksanaan kegiatan penelitian dan pengabdian kepada masyarakat yang diselenggarakan oleh LPPM, GBK, Program Studi, kelompok dan perorangan. LPPM mengusahakan pengendalian dalam hal penggunaan sumber daya, serta mengusahakan pengembangan dan peningkatan mutu penelitian dan pengabdian kepada masyarakat.
+                    
+                    Visi LPPM IT Del:
+                    
+                    Menjadi lembaga yang unggul dan mandiri dalam pelaksanaan penelitian, khususnya kepada pengembangan dan pemanfaatan teknologi informasi dan komunikasi, dan pengabdian kepada masyarakat.
+                    
+                    Misi LPPM IT Del adalah sebagai berikut :
+                    
+                    – Mengembangkan sumber daya pendidikan dan pengajaran di kampus dan masyarakat umumnya melalui penelitian dan pemanfaatan hasil penelitian.
+                    – Menghasilkan penelitian dan kajian-kajian akademik berkualitas yang memberikan dampak pada pengembangan institusi, baik untuk tingkat lokal, nasional, maupun internasional.
+                    – Mendiseminasikan hasil-hasil penelitian melalui seminar, lokakarya, dan media lainnya sehingga mencapai sasaran seluas-luasnya.
+                    – Mengembangkan kegiatan pengabdian masyarakat yang profesional, berbasis ilmu pengetahuan dan teknologi, khususnya teknologi informasi dan komunikasi.
+                    – Meningkatkan kemampuan dan peran serta dosen dan mahasiswa dalam penelitian dan pemberdayaan pada masyarakat.
+                    
+                    Fungsi dan Tugas LPPM IT Del
+                    
+                    Bidang Penelitian
+                    
+                    A. Internal
+                    
+                    – Mengkoordinir penelitian di GBK, prodi dan penelitian oleh kelompok atau perorangan.
+                    – Menyebarkan informasi yang berkaitan dengan penelitian, misalnya informasi dari Dirjen Dikti atau Kementerian Riset dan Teknologi.
+                    – Membantu meningkatkan kemampuan meneliti para dosen IT Del
+                    – Membantu meningkatkan mutu penelitian dengan mengadakan pelatihan dan kegiatan ilmiah untuk diseminasi dan pembahasan hasil penelitian.
+                    – Membantu menanggulangi masalah-masalah dalam pelaksanaan penelitian di GBK, prodi dan penelitian oleh kelompok atau perorangan.
+                    – Membantu dosen dalam publikasi hasil penelitian.
+                    – Membantu dosen dengan pengembangan kebijakan insentif untuk kegiatan penelitian.
+                    
+                    B. Eksternal
+                    
+                    – Mendapatkan informasi yang berkaitan dengan penelitian, misalnya dari Direktorat Jendral Pendidikan Tinggi – DepDikBud (informasi tentang Hibah Bersaing, dan lain-lain dana penelitian yang terbuka bagi PTS). Juga dengan instansi pemerintah, non-pemerintah, dan donor internasional lainnya, misalnya informasi insentif riset dari Kementerian Riset dan Teknologi.
+                    – Mengembangkan jejaring penelitian bersama dengan Politeknik yang ada di Indonesia.
+                    – Mengembangkan jaringan kerjasama penelitian dengan pemerintah daerah dan berbagai Perguruan Tinggi di Sumatera Utara, Indonesia dan manca Negara.
+                    
+                    Bidang Pengabdian Masyarakat
+                    
+                    A. Internal
+                    
+                    – Membantu segenap civitas akademik IT Del dalam pelaksanaan kegiatan pengabdian masyarakat agar mendapatkan sasaran yang tepat dan berkesinambungan.
+                    – Melaksanakan kegiatan-kegiatan yang mempunyai dampak sosial dan ekonomi kepada masyarakat sekitar kampus IT Del.
+                    – Mengembangkan kemampuan mahasiswa dan alumni dalam pengembangan usaha.
+                    – Membuat program-program yang bertujuan untuk pengembangan dan penguatan wilayah/daerah sekitar kampus IT Del.
+                    
+                    B. Eksternal
+                    
+                    – Mengembangkan kerjasama dengan masyarakat atau kelompok-kelompok tertentu di sekitar dataran tinggi Toba.
+                    – Mengembangkan program-program pelatihan dan pendidikan (kursus) bagi peningkatan kapasitas masyarakat Toba Samosir dan sekitarnya.
+                    – Mengembangkan kerjasama dengan institusi-institusi seperti pemda sekitar IT Del, perusahaan-perusahaan swasta, DIKTI, dan lembaga donor.</p>
+            </div>
+            <div class="read-more">
+                <a href="#">
+                    Lihat Selengkapnya
+                    <i class="fa fa-arrow-right"></i> <!-- Ganti dengan ikon panah yang sesuai -->
+                </a>
+            </div>
+            <a href="#" class="btn1"><i class="fas fa-plus"></i> Hapus Lembaga</a>
+        </div>
+        </div>
+<div></div>
+        <div class="card">
+            <div class="edit-btn" onclick="editCard()">
+                <i class="fas fa-pencil-alt"></i> Edit
+            </div>
+            <h1>Mitra Kerjasama Dengan IT Del</h1>
+            <div class="card-content">
+                <p><ul><li>Mitra Kerjasama Dengan IT Del Tahun 2014</li></ul>
+                    <p><ul><li>Mitra Kerjasama Dengan IT Del Tahun 2015</li></ul>
+                        <p><ul><li>Mitra Kerjasama Dengan IT Del Tahun 2016</li></ul>
+                            <p><ul><li>Mitra Kerjasama Dengan IT Del Tahun 2017</li></ul>
+                                <p><ul><li>Mitra Kerjasama Dengan IT Del Tahun 2018</li></ul></p>
+            </div>
+            <div class="read-more">
+                <a href="#">
+                    Lihat Selengkapnya
+                    <i class="fa fa-arrow-right"></i> <!-- Ganti dengan ikon panah yang sesuai -->
+                </a>
+            </div>
+            <a href="#" class="btn1"><i class="fas fa-plus"></i> Hapus Lembaga</a>
+        </div>
+        </div>
+
+        <div class="card">
+            <div class="edit-btn" onclick="editCard()">
+                <i class="fas fa-pencil-alt"></i> Edit
+            </div>
+            <h1>MUPT PP-ESTEM</h1>
+            <div class="card-content">
+                <h2>A. VISI</h2>
+
+                    <P>Sebagai pusat pengembangan pembelajaran yang unggul dan inovasi secara khusus namun tidak terbatas pada bidang Sains, Teknologi, Enginering, dan Matematika (STEM) yang berkualitas, efisien, efektif, produktif, dan akuntabel.
+                    <h2>B. MISI</h2>
+                    
+                    <p>Melakukan kegiatan penelitian terkait metode, media, dan sumber belajar yang inovatif dan berkualitas yang berbasiskan konsep STEM serta pengembangan dan penerapannya dalam kegiatan belajar mengajar di IT Del.
+                    Mengembangkan pembelajaran dengan pendekatan yang berpusat pada mahasiswa (SCL-Student Center Learning) dan penerapannya dalam kegiatan belajar mengajar di IT Del.
+                    Mengembangkan pembelajaran elektronik (e-learning) dan penerapannya dalam kegiatan belajar mengajar di IT Del.
+                    Melakukan kegiatan pelatihan kepada sivitas IT Del dan kepada pihak eksternal terkait dengan pembelajaran yang inovatif berbasiskan STEM dan SCL.
+                    Menjalin kerjasama dengan pihak eksternal seperti pemerintah, institusi pendidikan lain, dan juga industri dalam pengembangan dan penerapan pembelajaran yang inovatif.
+                    <h2>C. TUJUAN</h2>
+                    
+                    Meningkatkan kemampuan sivitas dalam melaksanakan pembelajaran yang inovatif berbasis STEM, SCL, dan elektronik.
+                    Meningkatkan kemampuan lulusan dengan serapan kerja yang tinggi yang dibutuhkan industri dan masyarakat.
+                    Meningkatkan kemampuan tenaga pengajar di lembaga pendidikan yang menjadi mitra dalam melaksanakan pembelajaran yang inovatif berbasis STEM, SCL, dan elektronik.
+                     .</p>
+            </div>
+            <div class="read-more">
+                <a href="#">
+                    Lihat Selengkapnya
+                    <i class="fa fa-arrow-right"></i> <!-- Ganti dengan ikon panah yang sesuai -->
+                </a>
+            </div>
+            <a href="#" class="btn1"><i class="fas fa-plus"></i> Hapus Lembaga</a>
+        </div>
+        </div>
+
+        <div class="card">
+            <div class="edit-btn" onclick="editCard()">
+                <i class="fas fa-pencil-alt"></i> Edit
+            </div>
+            <h1>Sistem Penjaminan Mutu (SPM)</h1>
+            <div class="card-content">
+                <p>Sesuai arahan dari Direktorat Jenderal Pendidikan Tinggi tentang penjaminan mutu perguruan tinggi yang terdiri atas penjaminan mutu internal dan penjaminan mutu eksternal, maka Institut Teknologi Del sebagai institusi pendidikan yang hendak menghasilkan sumber daya manusia dengan kompetensi yang baik harus mewujudkan arahan tersebut. Untuk itu dibentuklah SPM IT Del, pada tanggal 14 November 2008.
+
+                    Saat ini, SPM sebagai lembaga penjamin mutu internal di IT Del sedang membangun fondasi dan mempersiapkan seluruh elemen yang dibutuhkan agar penjaminan mutu internal dapat dilaksanakan.
+                    
+                    <h2>Visi SPM IT Del</h2>
+                    
+                    Menjadi rujukan penjaminan mutu pendidikan tinggi, baik untuk aspek pendidikan, penelitian, pengabdian pada masyarakat, dan manajemen kelembagaan perguruan tinggi.
+                    
+                    <h2>Misi SPM IT Del</h2>
+                    
+                    Marroha, Menjadikan mutu sebagai ruh yang menjiwai program dan kegiatan yang diselenggarakan oleh unit kerja dan insan Institut Teknologi Del di semua Satuan Akademik dan Satuan Unit Kerja untuk mencapai karya yang bermutu dan akuntabel.
+                    
+                    <h2>Fungsi SPM IT Del</h2>
+                    
+                    Sebagai perangkat Institut Teknologi Del, SPM berfungsi menyelenggarakan proses penjaminan mutu terhadap program kegiatan Tridarma Perguruan Tinggi yang dijalankan di Poilteknik Informatika Del.
+                    
+                    <h2>Tugas Umum SPM IT Del</h2>
+                    
+                    Mengembangkan perangkat dan panduan penjaminan mutu program akademik pendidikan, penelitian dan pengabdian kepada masyarakat, serta program dan kegiatan non-akademik, yang sifatnya umum.
+                    Mengkordinasikan pelaksanaan kegiatan penjaminan mutu program akademik dan nonakademik di lingkungan Institut Teknologi Del.
+                    Melaksanakan kajian-kajian terhadap hasil pelaksanaan penjaminan mutu yang dilaksanakan oleh semua Bidang di IT Del, yaitu Bidang Akademik, Kemahasiswaan, Sarana Prasarana,
+                    Menyampaikan hasil kajiannya kepada Direktur dan Sidang Akademik.
+                    Sesuai dengan kondisi capaian mutu IT Del, SPM berfungsi menyusun standar mutu program dan kegiatan Institut Teknologi Del.
+                     .</p>
+            </div>
+            <div class="read-more">
+                <a href="#">
+                    Lihat Selengkapnya
+                    <i class="fa fa-arrow-right"></i> <!-- Ganti dengan ikon panah yang sesuai -->
+                </a>
+            </div>
+            <a href="#" class="btn1"><i class="fas fa-plus"></i> Hapus Lembaga</a>
+        </div>
+        </div>
+        <div class="card">
+            <div class="edit-btn" onclick="editCard()">
+                <i class="fas fa-pencil-alt"></i> Edit
+            </div>
+            <h1>Pusat Modal Manusia (PMM)</h1>            <div class="card-content">
+                <p>Sub Kinerja Pusat Modal Manusia
+
+                    <h2>a. SIPATEN</h2>
+              
+              SIPATEN  (Sistem  Informasi  Kepangkatan  Tenaga  Dosen)  adalah  aplikasi  dekstop  yang akan  di  gunakan  oleh  seluruh  perguruan  tinggi  swasta  yang  terdaftar  di LLDikti 1 Sumatera  Utara  untuk  Jabatan  fungsional  dosen,  dengan  adanya  aplikasi  ini  diharapkan  akan membantu   proses   pengajuan   dan   pembuatan   SK   Jabatan   Fungsional   Dosen.
+              
+                     <h2>b. SISTER</h2>
+              
+              SISTER (Sistem Informasi Sumber Daya Terintergrasi) adalah sebuah sistem pengelolaan data seluruh dosen Indonesia sehingga potensi dosen tersebut dapat dikelola dengan baik. Kemenristek Dikti melalu Direktorat Jenderal Sumber Daya Iptek dan Dikti meluncurkan program terobosan dalam manajemen data dosen di Indoensia. Program ini dinamakan SISTER. Aplikasi ini lahir sebagai upaya Kemenristek Dikti dalam “menjernihkan” data dosen dalam sistem pendataan Kemenristek Dikti.
+              
+              Dengan adanya aplikasi SISTER ini, pemilik data (Dosen) memiliki akses untuk turut terlibat “menjernihkan” data yang dimilikinya. SISTER memberikan hak akses dan control penuh kepada dosen Indonesia atas data mereka. Aplikasi ini dibangun dengan tujuan untuk meningkatkan kualitas data SDM IPTEK dan DIKTI dalam rangka pembuatan kebijakan pengembangan SDM yang tajam dan relevan. Selain itu aplikasi SISTER mengintegrasikan seluruh layanan karir dan kompetensi SDM di Kemenristek sehingga memungkinkan para stakeholder menerima kepastian dalam pelayanan mereka. Mengembangkan karir dosen berbasis portofolio. SISTER Institut Teknologi Del adalah sister.del.ac.id.
+              
+                      <h2>c. Beban Kerja Dosen (BKD)</h2>
+              
+              BKD merupakan laporan kegiatan tridharma perguruan tinggi yang dilakukan oleh dosen yang meliputi bidang Pendidikan dan Pengajaran, Penelitian, Pengabdian kepada Masyarakat, dan Penunjang Kegiatan Tridharma Perguruan Tinggi.
+              
+               
+                     .</p>
+            </div>
+            <div class="read-more">
+                <a href="#">
+                    Lihat Selengkapnya
+                    <i class="fa fa-arrow-right"></i> <!-- Ganti dengan ikon panah yang sesuai -->
+                </a>
+            </div>
+            <a href="#" class="btn1"><i class="fas fa-plus"></i> Hapus Lembaga</a>
+        </div>
+        </div>
+        <div class="card">
+            <h1>Koperasi</h1>
+            <div class="card-content">
+                <p><h2>Sekilas KSU IT Del</h2>
+
+                    Koperasi Serba Usaha (KSU) IT Del dimulai kembali pada tanggal 8 Agustus 2008 sampai dengan saat ini, tahun 2014. KSU IT Del didirikan berdasarkan badan hukum dengan No Badan Hukum No : 49.A / BH / KUKM-TS / 2004, per tanggal 7 April 2004. Yang menjadi anggota KSU IT Del adalah dosen, staff, karyawan dan mahasiswa.
+                    
+                    
+                    
+                    Usaha yang dilakukan oleh KSU IT Del adalah:
+                    
+                    <h2>I. Usaha Toko</h2>
+                    
+                    <p>1.Menjual kebutuhan bagi anggota dan mahasiswa
+                    
+                    Usaha toko menjual beberapa kebutuhan bagi IT Del, para anggota dan mahasiswa. Kebutuhan yang dimaksud adalah penyediaan makanan dan minuman ringan, alat mandi, alat tulis dan alat kantor, dll. Dalam penyediaan kebutuhan tersebut, usaha toko melakukan kerjasama dengan beberapa supplier (makanan ringan, air minum) dari Balige, Pematang Siantar dan Sibolga. Supplier tersebut langsung membawa barang yang dibutukan ke KSU IT Del. Khusus untuk supplier air minum mineral aqua (aqua galon), saat ini supplier Aqua telah memutuskan untuk tidak langsung data mengantar barang ke KSU IT Del. Hal ini dikarenakan proses pengangkutan aqua.</p>
+                    
+                    <p>2.Menyediakan jasa printer
+                    
+                    Usaha toko juga menyediakan jasa printer ( Printer warna dan hitam putih ). Harga yang ditetapkan oleh koperasi untuk mencetak 1 halaman adalah Rp. 750 – 1.500</p>
+                    
+                    <p>3. Menyediakan angsuran barang elektronik
+                    
+                    Dalam membantu anggota dalam membeli barang elektronik, usaha toko dapat membantu pembelian barang elektronik yang dimaksud dengan menyediakan angsuran terhadap barang elektronik yang akan dibeli. Untuk periode saat ini, barang elektronik yang dibeli oleh anggota adalah Laptop (Notebook).</p>
+                    
+                    <p>4. Bekerjasama dengan klub usaha mahasiswa dalam melakukan penjualan barang koperasi
+                    
+                    Usaha toko juga melakukan kerjasama dengan klub usaha mahasiswa dalam melakukan penjualan barang koperasi pada event-event tertentu seperti: pada saat inaugurasi dan wisuda, maupun pada acara-acara yang diadakan oleh IT Del.</p>
+                    
+                     
+                    
+                    <p>II. Simpan Pinjam.</p>
+                    
+                    Dalam membantu anggota yang membutuhkan dana baik tujuan keluarga, usaha, dll, KSU IT Del menjalankan usaha simpan pinjam. Jumlah pinjaman yang dapat dilakukan oleh anggota sampai dengan saat ini antara Rp. 1.000.000 s/d Rp. 20.000.000,- dimana sebagian besar anggota melakukan pinjaman sebesar Rp. 5.000.000,-.
+                     .</p>
+            </div>
+            <div class="read-more">
+                <a href="#">
+                    Lihat Selengkapnya
+                    <i class="fa fa-arrow-right"></i> <!-- Ganti dengan ikon panah yang sesuai -->
+                </a>
+                </div>
+                <a href="#" class="btn1"><i class="fas fa-plus"></i> Hapus Lembaga</a>
+            </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="edit-btn" onclick="editCard()">
+                <i class="fas fa-pencil-alt"></i> Edit
+            </div>
+            <h1>Pusat Bahasa Del</h1>
+            <div class="card-content">
+                <p>The Language Center at Del Institute of Technology provides some programs and services for English skills development and for documents translations. Services for interpreting is also provided as requested.
+
+                    For individual English skills development, it is initially for preparation to sit an English test either for national or International standard tests. The most wanted English Proficiency Test, TOEFL institutional test, is provided as requested and also provided every year for a fix date to the third year students of IT Del.
+                    
+                    Some other services for English professional development are also provided and are grouped into some classes as follows:
+                    
+                    <li>English for Communication</li>
+                    <li>TOEFL Test Preparation</li>
+                    <li>IELTS Test Preparation</li>
+                    <li>English for Nursing</li>
+                    <li>English for Information Technology</li>
+                    <li>English for Administration and Secretary</li>
+                    <li>English for Oil and Gas</li>
+                    <br>
+                    <p>These courses can be ordered in person or for a group of people sharing the same interest for a specific course.</p>
+                    
+                    <p>Those above mentioned services are offered not only to Del students and staff but also to the general public in the local community and beyond</p>
+                    
+                    For further inquiries, please contact:
+                    
+                    Monalisa Pasaribu via email to monalisa.pasaribu@del.ac.id or call (0632) 331234
+                    
+                     
+                    
+                    TOEFL Institutional Test (TOEFL ITP) in IT Del Campus
+                    
+                    IT Del has administered TOEFL ITP Test (Test of English as a Foreign Language Institutional Testing Program) since 01 June 2013 after signing the MoU between IT Del and IIEF (The Indonesian International Education Foundation). IIEF operates under the supervision of ETS America. The score of TOEFL ITP given by IIEF is the score that is officially issued by Educational Testing Service (ETS), Princeton, United States of America.
+                    
+                    TOEFL ITP test or well known as TOEFL institutional test is administered every month in IT Del in 2022 with the following timetable:
+                     .</p>
+            </div>
+            <div class="read-more">
+                <a href="#">
+                    Lihat Selengkapnya
+                    <i class="fa fa-arrow-right"></i> <!-- Ganti dengan ikon panah yang sesuai -->
+                </a>
+            </div>
+            <a href="#" class="btn1"><i class="fas fa-plus"></i> Hapus Lembaga</a>
+        </div>
+        </div>
+    </div>
+  
+        
+        
+
+
+
+        <!-- ======= Footer ======= -->
+        <footer>
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p>&copy; Institut Teknologi Del</p>
+                    <p>Jl. Sisingamangaraja,</p>
+                    <p>SitoluamaLaguboti, Toba SamosirSumatera Utara, IndonesiaKode Pos: 22381</p>
+                    <p>Telp: +62 632 331234</p>
+                    <p>Fax: +62 632 331116</p>
+                    <p>Website: <a href="http://www.del.ac.id" target="_blank">www.del.ac.id</a></p>
+                    <p>Email: <a href="mailto:info@del.ac.id">info@del.ac.id</a></p>
+                    <p>Karir: <a href="mailto:karir@del.ac.id">karir@del.ac.id</a></p>
+                </div>
+                <div class="social-media">
+                    <p>LATEST TWEETS</p>
+                    <p>FIND US ON</p><br>
+                    <a href="https://web.facebook.com/Institut.Teknologi.Del" target="_blank"><i class="fab fa-facebook"></i> Facebook</a><br>
+                    <a href="https://www.instagram.com/it.del/" target="_blank"><i class="fab fa-twitter"></i> Twitter</a><br>
+                    <a href="https://www.instagram.com/it.del/" target="_blank"><i class="fab fa-whatsapp"></i> whatsapp</a><br>
+                    <a href="https://www.instagram.com/it.del/" target="_blank"><i class="fab fa-youtube"></i> Youtube</a><br>
+                    <a href="https://www.instagram.com/it.del/" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a><br>
+                </div>
+            </div>
+            <div class="logo-container">
+                <img src="assets\img/itb.png" alt="Logo 1">
+                <img src="assets\img/sud.png" alt="Logo 2">
+                <img src="assets\img/yayasan.png" alt="Logo 3">
+            </div>
+        </footer>
+      
+        <!-- End Footer -->
+        <script>
+            var btn = document.querySelector('.toggle');
+            var btnst = true;
+            btn.onclick = function () {
+                if (btnst == true) {
+                    document.querySelector('.toggle span').classList.add('toggle');
+                    document.getElementById('sidebar').classList.add('sidebarshow');
+                    btnst = false;
+                } else if (btnst == false) {
+                    document.querySelector('.toggle span').classList.remove('toggle');
+                    document.getElementById('sidebar').classList.remove('sidebarshow');
+                    btnst = true;
+                }
+            }
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </body>
+
+</html>

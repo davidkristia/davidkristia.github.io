@@ -1,0 +1,60 @@
+/*PRODI */
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.faculty-container {
+    margin-bottom: 30px;
+}
+
+.program-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.program-card {
+    width: 300px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.program-card:hover {
+    transform: scale(1.05);
+}
+
+.program-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.h3 {
+    margin: 0;
+    color: #333;
+    padding: 15px;
+}
+
+h2 {
+    font-size: 1.5em;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+}
+
+h3 {
+    font-size: 1.2em;
+    text-align: center;
+}
+p {
+    display: inline-block;
+    text-align: center;
+}

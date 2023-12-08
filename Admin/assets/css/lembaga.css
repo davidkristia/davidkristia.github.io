@@ -1,0 +1,124 @@
+body {
+    color: white;
+}
+.p{
+    color: #000000;
+}
+h1 {
+    color:#000000;
+}
+h2 {
+    color:#000000;
+}
+
+
+.card {
+    max-width: none; /* Menghapus batasan max-width */
+    width: 100%; /* Mengatur lebar kartu menjadi 100% */
+    background-color: #0477BF; /* Ganti dengan warna biru yang diinginkan */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.card img {
+    width: 50%;
+    height: auto;
+    border-bottom: 1px solid #140505;
+    float: left;
+    margin-left: 20px;
+}
+.edit-btn {
+    cursor: pointer;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.edit-btn i {
+    margin-right: 5px;
+}
+
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content p {
+    margin-bottom: 20px;
+}
+
+.read-more {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.read-more a {
+    text-decoration: none;
+    color: #fff; /* Ganti dengan warna teks yang sesuai dengan latar belakang Anda */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.read-more a i {
+    margin-left: 5px;
+}
+
+.card {
+    width: 80%; /* Adjust the width as needed */
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #4caf50;
+    color: #000000;
+    border-radius: 25px;
+    margin-left: 50px;
+    margin-top: 30px; /* Menambahkan margin-top agar tombol turun ke bawah */
+  }
+
+  .btn1 {
+    display: inline-block;
+    padding: 8px 12px; /* Mengurangi padding secara keseluruhan */
+    font-size: 12px;   /* Mengurangi font size */
+    text-align: center;
+    text-decoration: none;
+    background-color: #F10F1D;
+    color: #000000;
+    border-radius: 15px; /* Mengurangi border-radius */
+    margin-right: 800px;
+    margin-top: 30px;
+    width: 150px;
+}
+
+
+
+.card-content {
+    font-size: 16px; /* Adjust the font size as needed */
+}
+
+.read-more {
+    margin-top: 15px;
+}
+
+.edit-btn {
+    cursor: pointer;
+    color: #000000;
+}
+
+/* Add this style to hide the Edit button by default */
+.edit-btn {
+    display: none;
+    color: #000000;
+}

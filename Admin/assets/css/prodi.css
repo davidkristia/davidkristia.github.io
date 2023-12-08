@@ -1,0 +1,66 @@
+
+
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    
+    padding: 0px;
+  }
+
+  .card {
+    background-color: #D9D9D9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+  }
+
+  .card h3 {
+    color: #333;
+  }
+
+  .card p {
+    color: #777;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    background-color: #3498db;
+    color: #000000;
+    border-radius: 25px;
+    margin-top: 30px; /* Menambahkan margin-top agar tombol turun ke bawah */
+  }
+
+  .edit-btn, .delete-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: #4caf50; /* Warna untuk tombol Edit */
+    color: #fff;
+  }
+  
+  .delete-btn {
+    background-color: #F10F1D; /* Warna untuk tombol Hapus */
+    color: #fff;
+  }
+  
+  /* Styling tambahan untuk memisahkan tombol */
+  .edit-btn + .delete-btn {
+    margin-left: 10px;
+  }
+  
